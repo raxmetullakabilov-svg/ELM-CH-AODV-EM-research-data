@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "STEP7_3C_COLAB_FREEZE_V2",
+  "inputFilename": "outputs.zip",
+  "inputSha256": "87701620fcf8bb994c4fdd7850dc8f54b58145d1f673cb1fbb407358b4ba23ac",
+  "scientificSourceHash": "1F258F80712E7FF0",
+  "h300FreezeHash": "529E2E767CBDCF6C",
+  "scenario": "STRESS",
+  "horizon_s": 300,
+  "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    111,
+    112,
+    113
+  ],
+  "protocols": [
+    "ELM_CH_AODV_EM",
+    "AODV",
+    "AODV_EM",
+    "AOMDV"
+  ],
+  "pairing": {
+    "groupBy": [
+      "run_id",
+      "flow_id"
+    ],
+    "sortBy": [
+      "gen_time_s",
+      "packet_id"
+    ],
+    "assignment": "consecutive pairs; first=RGB edge-preprocessed observation unit; second=thermal edge-preprocessed observation unit",
+    "completePairsPerRun": 29900,
+    "unpairedPacketsPerRun": 10,
+    "withinPairGenerationGap_s": 0.05
+  },
+  "primary": {
+    "Dmax_s": 0.2,
+    "deltaMax_s": 0.05
+  },
+  "sensitivity": {
+    "Dmax_s": [
+      0.1,
+      0.2,
+      0.5,
+      1.0
+    ],
+    "deltaMax_s": [
+      0.01,
+      0.025,
+      0.05,
+      0.1
+    ]
+  },
+  "claimBoundary": "Network-conditioned fusion-readiness surrogate only; no raw-image transport, physical sensor synchronization, fusion-algorithm, or detector-accuracy claim."
+}

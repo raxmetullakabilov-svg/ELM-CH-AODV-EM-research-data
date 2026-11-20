@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "STEP7_3C_QA_V2",
+  "status": "PASS",
+  "input_sha256": "87701620fcf8bb994c4fdd7850dc8f54b58145d1f673cb1fbb407358b4ba23ac",
+  "final_h300_runs": 48,
+  "protocols": [
+    "ELM_CH_AODV_EM",
+    "AODV",
+    "AODV_EM",
+    "AOMDV"
+  ],
+  "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    111,
+    112,
+    113
+  ],
+  "primary_thresholds": {
+    "Dmax_s": 0.2,
+    "delta_s": 0.05
+  },
+  "pairing": {
+    "generated_complete_pairs_per_run": 29900,
+    "unpaired_packets_per_run": 10,
+    "within_pair_generation_gap_s": 0.05,
+    "interpretation": "first packet=RGB edge-preprocessed observation unit; second packet=thermal edge-preprocessed observation unit"
+  },
+  "primary_FRPDR": {
+    "ELM_CH_AODV_EM": {
+      "mean": 0.8191360089186176,
+      "sd": 0.027994180411723094
+    },
+    "AODV": {
+      "mean": 0.6236510590858416,
+      "sd": 0.12716828337799752
+    },
+    "AODV_EM": {
+      "mean": 0.5678929765886288,
+      "sd": 0.12684687766261182
+    },
+    "AOMDV": {
+      "mean": 0.7131326644370123,
+      "sd": 0.09981219745335773
+    }
+  },
+  "friedman": {
+    "chi2": 31.400000000000006,
+    "p": 7.001728218503788e-07,
+    "kendalls_W": 0.8722222222222223
+  },
+  "ELM_highest_mean_FRPDR_all_16_sensitivity_points": true,
+  "claim_boundary": "Network-conditioned fusion-readiness surrogate only; no raw-image transport, physical sensor synchronization, fusion-algorithm, or detector-accuracy claim."
+}
