@@ -1,0 +1,10 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Preserve exact bytes of research data and verification files
+*.csv -text
+*.json -text
+*.md -text
+*.txt -text
+*.py -text
+.gitignore -text
